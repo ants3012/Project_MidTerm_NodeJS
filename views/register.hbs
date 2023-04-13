@@ -1,8 +1,13 @@
-<section class="login-box">
+<section class="register-box">
     <div class="form-box">
         <div class="form-value">
             <form action="">
-                <h2>Login</h2>
+                <h2>Sign Up</h2>
+                <div class="inputbox">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Username</label>
+                </div>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
                     <input type="email" required>
@@ -14,9 +19,15 @@
                     <label for="">Password</label>
                 </div>
 
-                <button>Log in</button>
+                <div class="inputbox">
+                    <ion-icon name="return-down-back-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Confirm Password</label>
+                </div>
+
+                <button>Sign up</button>
                 <div class="register">
-                    <p>Don't have a account <a href="/register">Register</a></p>
+                    <p>Already have an account <a href="/login">Register</a></p>
                 </div>
             </form>
         </div>
