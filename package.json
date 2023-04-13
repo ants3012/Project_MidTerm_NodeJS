@@ -1,0 +1,32 @@
+{
+  "name": "project_chatapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ants3012/Project_MidTerm_NodeJS.git"
+  },
+  "keywords": [
+    "midterm",
+    "chat",
+    "application"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ants3012/Project_MidTerm_NodeJS/issues"
+  },
+  "homepage": "https://github.com/ants3012/Project_MidTerm_NodeJS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "express-handlebars": "^7.0.6",
+    "nodemon": "^2.0.22"
+  }
+}
