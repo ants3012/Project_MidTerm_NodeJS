@@ -15,7 +15,7 @@
       <div class="chat-header">
         <h2>Chat Room</h2>
       </div>
-      <div class="chat-messages"style="overflow-y:scroll;">
+      <div class="chat-messages">
         <ul id="messages">
           <li><span class="user">User 1:</span> Hello!</li>
           <li><span class="user">User 2:</span> Hi, how are you?</li>
@@ -24,11 +24,12 @@
         </ul>
         <div class="chat-input" id="" >
           <form id="form">
-          <input type="text" placeholder="Type your message..." id="input">
-          <button type="submit">Send</button>
-        </form>
+            <input type="text" placeholder="Type your message..." id="input">
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
+
       <script src="/socket.io/socket.io.js"></script>
       <script>
         var socket = io();
