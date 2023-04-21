@@ -198,6 +198,7 @@ main {
 }
 
 .chat-messages {
+  height: 500px;
   overflow-y: scroll;
 }
 
@@ -222,6 +223,10 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.chat-input #form {
+  display: contents;
 }
 
 .chat-input input {
