@@ -78,13 +78,14 @@ app.post('/register', async (req, res) => {
 
 // ---------------Chat-----------------
 io.on('connection', (socket) => {
-  io.emit('chat message', socket.id+' has logged in');
-  socket.on('chat message', msg => {
-    io.emit('chat message', msg);
-    console.log(msg);
+  io.emit('noty', socket.id+' has logged in');
+  socket.on('chat message', (data) => {
+    if(data.user==="")data.user="Guest";
+    io.emit('chat message', (data));
+    console.log(data.msg);
   });
   socket.on('disconnect', () =>{
-    io.emit('chat message', socket.id+' disconnected');
+    io.emit('noty', socket.id+' disconnected');
   })
 });
 
