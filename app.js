@@ -3,11 +3,11 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const app = express()
 
-// // Regiter
-// const bodyParser = require('body-parser');
-// const mongoose = require('mongoose');
-// const bcrypt = require('bcrypt');
-// const User = require('./user');
+// Regiter
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const User = require('./user');
 
 // Socket.IO
 const http = require('http').Server(app);
@@ -18,7 +18,7 @@ const port = 3000
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Connect to DB
-// mongoose.connect('mongodb://localhost:27017/chat_application', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/chat_application', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // const db = mongoose.connection;
 // db.on('error', console.error.bind(console, 'connection error:'));
