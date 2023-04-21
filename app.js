@@ -6,7 +6,6 @@ const app = express()
 // Regiter
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
 const User = require('./user');
 
 // Socket.IO
@@ -17,7 +16,7 @@ const port = 3000
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Connect to DB
+// //Connect to DB
 mongoose.connect('mongodb://localhost:27017/chat_application', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
